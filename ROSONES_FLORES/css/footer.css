@@ -1,0 +1,9 @@
+.footer {
+  text-align: center;
+  background: #cc5353;
+  color: white;
+  padding: 10px 0;
+  margin-top: auto; /* Empuja el footer al final de la página */
+  width: 100%;
+  position: relative;
+}

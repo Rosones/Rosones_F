@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotizacion-Rosones</title>
+  <link rel="stylesheet" href="css/galeria.css">
+  <link rel="stylesheet" href="css/cotizacion.css">
+  <link rel="stylesheet" href="css/foote.css">
+  <link rel="stylesheet" href="css/bran.css">
+  <link rel="stylesheet" href="css/mediaQueries.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  
+</head>
+<body class="body">
+  <header class="header">
+    <nav class="navbar">
+      <img src="img/img-2.jpg" class="logo" alt="ROSONES">
+      <div class="brand">
+        
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">FLORERIA ROSONES</em></li>
+        <li class="active"><a href="Quienes_somos.html">¿Quienes somos?</a></li>
+        <li><a href="Nuestro_Producto.html">Nuestro Producto</a></li>
+        <li><a href="Galeria.html">Galeria</a></li>
+        <li><a href="Catalogo_Precios.html">Catalogo</a></li>
+        <li><a href="#">Cotizacion</a></li>
+      </ul>
+      <div class="menu-bar">
+        <i class="fas fa-bars" id="menu-bar"></i>
+      </div>
+      <div class="shop" style="display:none">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2>Solicitud de Cotización</h2>
+    <form id="cotizacionForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="pedido">Pedido a cotizar:</label>
+        <textarea id="pedido" name="pedido" maxlength="500" required></textarea>
+
+        <button type="submit">Enviar Cotización</button>
+    </form>
+</div>
+
+
+
+
+
+  <footer class="footer">
+    <p>
+      FLORERIA ROSONES<sup>®</sup><br>
+      copyrigh<sub>©</sub>2025
+   </p>
+
+  </footer>
+  
+  
+  
+  <script src="js/cotizacion.js"></script>
+  <script src="js/scripts1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init(); // Inicializa AOS
+  </script>
+      <!-- Agrega EmailJS -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      <script type="text/javascript">
+          emailjs.init("dR1w96rT0DyEznm6R");  // Reemplaza con tu User ID de EmailJS
+      </script>
+
+</body>
+</html>

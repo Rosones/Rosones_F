@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.fas {
+  font-size: 1.2em;
+}
+.navbar {
+  background-color: #e78585;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+.navbar .logo {
+  height: 70px;
+  width: 140px;
+  grid-column: 2 / 3;
+ 
+}
+.navbar .menu {
+  grid-column: 4 / 7;
+  display: flex;
+}
+.navbar ul li {
+  margin-right: 3em;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.navbar ul li a:hover {
+  color: #fff;
+}
+.navbar .menu-bar {
+  display: none;
+}
+.navbar .shop {
+  grid-column: 8 / 9;
+  justify-content: flex-end;
+}
+.hero {
+  height: 83vh;
+  background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)) , url(../img/img8.jpeg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  position: relative;
+}
+.hero .info-content {
+  grid-column: 7
+   / 10;
+  grid-row: 3 / 7;
+  color: #fff;
+  z-index: 1;
+}
+.hero .info-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+}
+.hero .info-content h1 {
+  font-weight: 900;
+  font-size: 5em;
+  color: #c77372;
+}
+.hero .info-content p {
+  font-family: 'Montserrat', sans-serif;
+}
+.hero .info-content .btn {
+  font-size: 1em;
+  color:#fff;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border:1px solid#c77372;
+  margin-top: 10px;
+}
+.hero .info-content .btn:hover {
+  background-color: transparent;
+  color:#c77372;
+}
+.radio-section {
+  display: grid;
+  height: 80px;
+  align-items: center;
+  background-color: #f3a89e;
+  color: #fff;
+  grid-template-areas: 
+    "listen-online follow-me social-network" 
+}
+.radio-section .listen-online {
+  grid-template-areas: listen-online;
+  display: flex;
+  justify-content: center;
+  background-color: #c77372;
+  color:#ece5e5;
+  padding: 27px;
+  gap: 10px;
+}
+.radio-section .listen-online .fas {
+  margin-right: 16px;
+  font-size: 1.5em;
+}
+.radio-section h2 {
+  grid-template-areas: follow-me;
+  text-align: center;
+}
+.radio-section .social-network {
+  grid-template-areas: social-network;
+}
+.radio-section .social-network .fab {
+  font-size: 1.4em;
+  color: #d4403e;
+  margin-right: 30px;
+  justify-content: flex-end;
+}
